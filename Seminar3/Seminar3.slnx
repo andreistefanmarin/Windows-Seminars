@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../WindowsFormsApp1/WindowsFormsApp1.csproj" />
+  <Project Path="Seminar3.csproj" />
+</Solution>
