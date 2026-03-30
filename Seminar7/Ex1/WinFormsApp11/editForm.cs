@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WinFormsApp11.Entities;
+
+namespace WinFormsApp11
+{
+    public partial class editForm : Form
+    {
+        private readonly Participant _participant;
+
+        public editForm(Participant participant)
+        {
+            _participant = participant;
+            InitializeComponent();
+        }
+
+        private void editForm_Load(object sender, EventArgs e)
+        {
+            tbLastName.DataBindings.Add("Text", _participant, "LastName");
+            tbFirstName.DataBindings.Add("Text", _participant, "FirstName");
+            dtpBirthDate.DataBindings.Add("Value", _participant, "Birthdate");
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
