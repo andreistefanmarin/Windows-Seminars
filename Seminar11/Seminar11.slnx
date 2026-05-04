@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ChartLibrary/ChartLibrary.csproj" />
+  <Project Path="Seminar11.csproj" />
+</Solution>
